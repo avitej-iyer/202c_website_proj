@@ -20,33 +20,31 @@ import { getId } from './helper';
  */
 
 export const socialLinks: StringKeyValueType = {
-  instagram: 'https://www.instagram.com/gauravv1902',
-  twitter: 'https://twitter.com/0xgauravv',
-  github: 'https://github.com/gaurav-sarage',
-  linkedin: 'https://www.linkedin.com/in/gaurav-sarage/',
+  github: 'https://github.com/avitej-iyer',
+  linkedin: 'https://www.linkedin.com/in/avitej-iyer',
 };
 
 export const author = {
-  name: 'Gaurav Sarage',
-  email: 'gauravsarage.1902@gmail.com',
+  name: 'Avitej Iyer',
+  email: 'iyeravitej2@gmail.com',
 };
 
 export const seoData = {
-  title: 'Gaurav Sarage | Full-Stack Developer',
+  title: 'Avitej Iyer | Student | Developer',
   description:
-    'Gaurav Sarage is a full-stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Avitej is a senior in college who likes messing around with various technologies (especially frontend).',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/85820227/231264058-df236c47-a8d2-4077-9fa6-3577aa18e8ca.png',
   url: '',
   keywords: [
-    'Gaurav',
-    'Gaurav Sarage',
-    '@Gaurav Sarage',
-    'Gaurav Sarage',
-    'Portfolio',
-    'Gaurav Portfolio ',
-    'Gaurav Sarage Portfolio',
+    'Avitej Iyer',
+    'Avitej',
+    'Avitej Iyer Portfolio',
+    'Avitej Portfolio',
+    '@Avitej Iyer',
+    '@Avitej',
+    'Iyer',
   ],
 };
 
@@ -75,12 +73,11 @@ export const navbarSection: NavbarSectionType = {
 // * Hero Section
 
 export const heroSection: HeroSectionType = {
-  subtitle: "Hello fren 👋, I'm ",
-  title: 'Gaurav Sarage.',
+  subtitle: "Hey there! I'm ",
+  title: 'Avitej Iyer.',
   tagline: 'I create visually appealing interfaces on the web',
   description:
-    "I'm a passionate Fullstack Web Developer having an experience of creating web applications using ReactJS & NextJS. ",
-  specialText: "Organizer @The Phoenix Guild - Pune",
+    "I'm a passionate full-stack developer, with experience in both frontend and backend systems.",
 
   cta: {
     title: 'see my resume',
@@ -96,15 +93,15 @@ export const aboutSection: AboutSectionType = {
   list: {
     title: 'Here are a few technologies I’ve been working with recently:',
     items: [
-      'Next.js',
-      'React.js',
-      'TailwindCSS',
-      'Solidity',
-      'Cairo',
-      'Hardhat',
+      'Python',
+      'React',
+      'JavaScript',
+      'HTML/CSS',
+      'GoLang',
+      'C/C++',
     ],
   },
-  img: '/gaurav-sarage.jpg',
+  img: '/sample-image.jpg',
 };
 
 // * Skills Section
@@ -123,7 +120,7 @@ export const skillsSection: SkillsSectionType = {
       points: [
         'Building responsive static websites using Next.js',
         'Building responsive Single Page Apps in React.js',
-        'Building RESTful APIs in Express',
+        'Building RESTful APIs with Node.js & Express.js',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
@@ -144,14 +141,14 @@ export const skillsSection: SkillsSectionType = {
     },
     {
       id: getId(),
-      title: 'blockchain development',
+      title: 'Cloud Cryptography & Security',
       lottie: {
         light: '/lotties/ethereum.json',
         dark: '/lotties/ethereum-dark.json',
       },
       points: [
-        'Experience in developing Smart Contract using Solidity & Ethereum',
-        'Developing NFT Smart Contracts using ERC-721 Token Standard',
+        'Developing cloud based smart-contracts using AWS',
+        'Building secure and scalable tokens using ERC-20 & ERC-721 standards',
         'Building Dapps with React.js & Solidity using Web3.js',
       ],
       softwareSkills: [
@@ -166,58 +163,64 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: "My experience and volunteering",
+  title: "Where I've worked",
   experiences: [
     {
-      company: 'AirMenus',
-      companyUrl: 'https://about.airmenus.in',
-      role: 'Frontend Developer Intern',
-      started: 'Oct 2022',
+      company: 'Valuefy',
+      companyUrl: 'https://valuefy.com',
+      role: 'Software Developement Intern',
+      started: 'May 2023',
+      upto: 'August 2023',
+      tasks: [
+        "Used Loopback 3.x to help convert the previously monolithic architecture of the trading systems to a microservice-based architecture. This led to about a 60% decrease in the downtime of the services I worked on during updates",
+        "Used Python, Matplotlib and Hicharts to parse project info and stock value changes to create automated end of project presentations. This helped reduce manual data collection and interpretation at the end of major projects.",
+        "Integrated multiple trading APIs (including Alpaca and GTN into the trading codebase and tested the same using Postman",
+      ],
+    },
+    {
+      company: 'RERC On AAC at Penn State',
+      companyUrl: 'https://rerc-aac.psu.edu',
+      role: 'Capstone Team Lead',
+      started: 'August 2023',
       upto: 'Present',
       tasks: [
-        "Built 15+ dynamic web applications using React and Next.js, resulting in a 15% increase in user engagement.                      Collaborated closely 'with' the design team to implement pixel-perfect UI/UX designs, consistently delivering projects           on-time.",
-        "Developed and maintained responsive web applications for clients in the food and hospitality industry, enhancing their           online presence and customer engagement. Implemented Tailwind CSS to streamline the development process, reducing CSS            codebase by 20%",
-        "Collaborated with clients to gather project requirements and translate them into actionable technical tasks, ensuring            client expectations were met or exceeded.",
+        "Responsible for developing an indoor point-to-point navigation system in Unity focusing on accessibilty for mentally and physically impaired individuals",
+        "Developed a marker system using ARCore to guide users from one GPS co-ordinate to another. Also implemented a rapidly refreshing pathing mechanism to have a constant marker to endpoint.",
+        "Managed 4 other team members’ workflows using Trello and Git. Also set up testing pipelines for seamless code improvement. ",
       ],
     },
     {
-      company: 'StarkCon',
-      companyUrl: 'https://starkcon.com',
-      role: 'StarkCon Cairo Fellow',
-      started: 'January 2023',
-      upto: 'March 2023',
+      company: 'Penn State Learning',
+      companyUrl: 'https://pennstatelearning.psu.edu',
+      role: 'Guided Study Group Leader',
+      started: 'August 2022',
+      upto: 'Present',
       tasks: [
-        "Selected for the first cohort of StarkCon Cairo Fellow program and got trained on blockchain, Cairo and started building on StarkNet. ",
-        "Underwent a 5 week program under mentorship of professionals from StarkNet ecosystem. ",
-        "Learnt how to setup Cairo environment, blockchain, basics of ZK and Cairo, writing smart contracts and Starklings.",
-        "Earned an exclusive NFT as proof of completion and custom swag kit.",
+        "Facilitated revision lectures for Calculus 2, while working alongside the Mathematics department.",
+        "Created custom slides, Manim animations and worksheets for students to better their understanding of Calculus 2 concepts",
+        "Organised exam reviews for each major exam, with upwards of 400 students in attendance - with the average attendee’s test scores being 12% higher than non-attendees",
       ],
     },
     {
-      company: 'Yellow Fryum',
-      companyUrl: 'https://yellowfryum.com',
-      role: 'Frontend Developer & Research Intern',
-      started: 'March 2022',
-      upto: 'May 2022',
+      company: 'Penn State University',
+      companyUrl: 'https://www.eecs.psu.edu',
+      role: 'Learning Assistant and Grader',
+      started: 'May 2021',
+      upto: 'Present',
       tasks: [
-        "Spearheaded the design and development of a responsive landing page using ReactJS and Tailwind CSS, resulting in a               40% increase in page load speed",
-        'Worked closely with a cross-functional team of 5 interns to ideate and implement UI/UX improvements, resulting in a 20%          boost in user engagement and a 15% increase in conversion rates.',
-        'Conducted user research and usability testing, gathering feedback from over 100+ users, which directly influenced                design decisions and led to a 30% improvement in user satisfaction scores.',
-        "Met project deadlines consistently, delivering good-quality code and designs on time.",
+        "Assisted professors by preparing course materials, conducting office hours for doubt clearing and grading",
+        'Courses assisted include Newtonian Mechanics, Calculus 1, Discrete Math and Programming Language Concepts and Construction',
       ],
     },
     {
-      company: 'Google Cloud India',
-      companyUrl: 'https://cloud.google.com/',
-      role: 'Google Cloud Ready Facilitator',
-      started: 'March 2022',
-      upto: 'June 2022',
+      company: 'Private Tutoring',
+      companyUrl: '',
+      role: '',
+      started: 'January 2022',
+      upto: 'Present',
       tasks: [
-        "Selected as Google Cloud Facilitator for my institution.",
-        "Enrolled 600+ students from mine as well as students all across India.",
-        "Trained and helped them complete skill badges and quests in the domains of Cloud Infrastructure, Cloud Native Application Development, Big Data and Machine Learning, Security, Machine Learning & AI",
-        "At the end of program, approximately 550 students completed their milestones and gained significant knowledge in their respective tracks",
-        "The institution as a whole achieved Milestone 3 out of 4 which is a big feat with its first year in the GCRF program.",
+        "Tutored students in a variety of subjects - from helping high-schoolers with AP Calc and the SAT to college level tutoring for the GRE and advanced math classes",
+        'Assisted 13 tutees to date, with significant score increases whenever recorded',
       ],
     },
     // {
@@ -240,84 +243,39 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
-      name: 'Photo Gallery App (React)',
-      url: 'https://gsierra19-photo-gallery-app.web.app/',
-      repo: 'https://github.com/gaurav-sarage/photo-gallery-app',
-      img: 'https://user-images.githubusercontent.com/85820227/250177861-cd5a5cd8-590e-49a1-92b5-4273aeee2f57.png',
+      name: 'The Splice Programming Language',
+      url: '',
+      repo: 'https://github.com/avitej-iyer/Splice-Core',
+      img: '/project_images/Splice_go.png',
       year: 2023,
-      tags: ['ReactJS', 'CSS', 'JavaScript'],
+      tags: ['Golang'],
     },
     {
       id: getId(),
-      name: 'Personal Portfolio',
-      url: 'https://gs-portfolio-19.netlify.app/',
-      repo: 'https://github.com/gaurav-sarage/personal-portfolio',
-      img: 'https://user-images.githubusercontent.com/85820227/231264058-df236c47-a8d2-4077-9fa6-3577aa18e8ca.png',
-      year: 2021,
-      tags: ['HTML', 'CSS', 'JavaScript'],
-    },
-    {
-      id: getId(),
-      name: 'Scoot Bikes',
-      url: 'https://gaurav-sarage.github.io/Client01/',
-      repo: 'https://github.com/gaurav-sarage/Client01/',
-      img: 'https://user-images.githubusercontent.com/85820227/231265689-e189ef1b-b7a7-4a92-a8d5-39cef51fb6f3.png',
-      year: 2021,
-      tags: ['HTML', 'CSS'],
-    },
-    {
-      id: getId(),
-      name: 'countries app using REST API',
-      url: 'https://country-api-react-app.netlify.app/',
-      repo: 'https://github.com/gaurav-sarage/country-api',
-      img: 'https://user-images.githubusercontent.com/85820227/231487782-eb60fb21-32ae-4012-9190-7c42be3d18e8.png',
-      year: 2022,
-      tags: ['React', 'Sass'],
-    },
-    {
-      id: getId(),
-      name: 'ShopTronics - eCommerce',
-      url: 'https://github.com/gaurav-sarage/shopTronics-ecommerce',
-      repo: 'https://github.com/gaurav-sarage/shopTronics-ecommerce',
-      img: 'https://user-images.githubusercontent.com/85820227/231495891-ec7c33c6-7f36-41fe-8efd-3e992d5b800d.png',
+      name: 'Tweet Emotion Analyzer',
+      url: '',
+      repo: 'https://github.com/avitej-iyer/Tweet-Emotion-Recognizer',
+      img: '/project_images/emotion.png',
       year: 2023,
-      tags: ['React', 'Scss', 'HTML', 'Strapi', 'Stripe Payment Gateway'],
+      tags: ['Python', 'TensorFlow', 'Numpy', 'NLTK'],
     },
     {
       id: getId(),
-      name: 'ProShop MERN eCommerce',
-      url: 'https://github.com/gaurav-sarage/ecommerce',
-      repo: 'https://github.com/gaurav-sarage/ecommerce',
-      img: 'https://user-images.githubusercontent.com/85820227/231498672-64b2e2ff-d987-45a3-bca6-5d8d89759360.png',
+      name: 'Instruction Set',
+      url: '',
+      repo: '',
+      img: '/project_images/squat_pic.png',
+      year: 2023,
+      tags: ['Technical Writing'],
+    },
+    {
+      id: getId(),
+      name: 'Blockchain Server Client Node',
+      url: '',
+      repo: 'https://github.com/avitej-iyer/Blockchain-Server-Client-Node',
+      img: '/project_images/blockchain.png',
       year: 2022,
-      tags: ['React', 'Redux', 'Express', 'MongoDB'],
-    },
-    {
-      id: getId(),
-      name: 'Modern Art Gallery',
-      url: 'https://gaurav-sarage.github.io/Client-02/',
-      repo: 'https://github.com/gaurav-sarage/Client-02/',
-      img: 'https://user-images.githubusercontent.com/85820227/231500007-aa155693-1871-4e44-8152-9c230861e7bd.png',
-      year: 2022,
-      tags: ['HTML', 'CSS'],
-    },
-    {
-      id: getId(),
-      name: 'GitHub User Search',
-      url: 'https://gaurav-sarage.github.io/github-user-search/',
-      repo: 'https://github.com/gaurav-sarage/github-user-search',
-      img: 'https://user-images.githubusercontent.com/85820227/231501132-067311ef-2222-46d0-a20a-f0bf48827e01.png',
-      year: 2021,
-      tags: ['HTML', 'CSS', 'JavaScript'],
-    },
-    {
-      id: getId(),
-      name: 'Hackathon Portfolio',
-      url: 'https://gaurav-sarage.github.io/webathon-portfolio/',
-      repo: 'https://github.com/gaurav-sarage/webathon-portfolio',
-      img: 'https://user-images.githubusercontent.com/85820227/233788920-7c76e976-2f42-4750-a6ce-ad0fb2eb405d.png',
-      year: 2022,
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      tags: ['JavaScript', 'Solidity', 'Node.js', 'Express.js'],
     },
   ],
 };
@@ -342,14 +300,14 @@ export const socialSection: SocialSectionType = {
       icon: 'tabler:brand-github',
       url: socialLinks.github,
     },
-    {
+    /*{
       icon: 'mdi:instagram',
       url: socialLinks.instagram,
     },
     {
       icon: 'lucide:twitter',
       url: socialLinks.twitter,
-    },
+    },*/
     {
       icon: 'lucide:linkedin',
       url: socialLinks.linkedin,

@@ -19,23 +19,20 @@ const About = () => {
       <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Gaurav Sarage, an artist as well as crazy full stack
-            web developer who wants to explore every tech stack.
+            I'm a fourth year Computer Science Student at Penn State university! I'm always interested in learning new technologies and frameworks, and am motivated by personal projects!
           </p>
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at a
-            start-up -{' '}
+            I'm currently learning Cloud Frameworks for the {' '}
             <Link
-              href="https://about.airmenus.in"
+              href="https://aws.amazon.com/certification/certified-developer-associate/"
               target="_blank"
               className="text-accent"
             >
-              AirMenus
-            </Link>
-            .
+              AWS Certified Developer Associate
+            </Link> certificate and exploring Computational Game Theory!
           </p>
           <p>
-            My goal is to become a blockchain developer and settle for a good remote job.
+            When I'm not working, you can usually find me <Link href="https://www.instagram.com/liftsbyavi/" target="_blank" className='text-accent'>in the gym</Link>, playing the guitar, on the badminton court or just reading a book in a park (weather permitting, of course).
           </p>
 
           {list && (
