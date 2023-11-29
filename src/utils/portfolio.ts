@@ -101,7 +101,7 @@ export const aboutSection: AboutSectionType = {
       'C/C++',
     ],
   },
-  img: '/sample-image.jpg',
+  img: '/new.jpg',
 };
 
 // * Skills Section
