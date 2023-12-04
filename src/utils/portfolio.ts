@@ -244,7 +244,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'The Splice Programming Language',
-      url: '',
+      url: 'https://github.com/avitej-iyer/Splice-Core',
       repo: 'https://github.com/avitej-iyer/Splice-Core',
       img: '/project_images/Splice_go.png',
       year: 2023,
@@ -253,7 +253,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Tweet Emotion Analyzer',
-      url: '',
+      url: 'https://github.com/avitej-iyer/Tweet-Emotion-Recognizer',
       repo: 'https://github.com/avitej-iyer/Tweet-Emotion-Recognizer',
       img: '/project_images/emotion.png',
       year: 2023,
@@ -262,8 +262,8 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Instruction Set',
-      url: '',
-      repo: '',
+      url: 'https://github.com/avitej-iyer/202c-Instruction-Set',
+      repo: 'https://github.com/avitej-iyer/202c-Instruction-Set',
       img: '/project_images/squat_pic.png',
       year: 2023,
       tags: ['Technical Writing'],
@@ -271,7 +271,7 @@ export const projectsSection: ProjectsSectionType = {
     {
       id: getId(),
       name: 'Blockchain Server Client Node',
-      url: '',
+      url: 'https://github.com/avitej-iyer/Blockchain-Server-Client-Node',
       repo: 'https://github.com/avitej-iyer/Blockchain-Server-Client-Node',
       img: '/project_images/blockchain.png',
       year: 2022,
