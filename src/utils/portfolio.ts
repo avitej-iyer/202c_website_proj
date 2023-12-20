@@ -75,7 +75,7 @@ export const navbarSection: NavbarSectionType = {
 export const heroSection: HeroSectionType = {
   subtitle: "Hey there! I'm ",
   title: 'Avitej Iyer.',
-  tagline: 'I create visually appealing interfaces on the web',
+  tagline: 'Jack of all trades, master of some.',
   description:
     "I'm a passionate full-stack developer, with experience in both frontend and backend systems.",
 
@@ -107,7 +107,7 @@ export const aboutSection: AboutSectionType = {
 // * Skills Section
 
 export const skillsSection: SkillsSectionType = {
-  title: 'what i do',
+  title: 'What I do',
   skills: [
     {
       id: getId(),
@@ -143,19 +143,22 @@ export const skillsSection: SkillsSectionType = {
       id: getId(),
       title: 'Cloud Cryptography & Security',
       lottie: {
-        light: '/lotties/ethereum.json',
-        dark: '/lotties/ethereum-dark.json',
+        light: '/lotties/studying_light.json',
+        dark: '/lotties/studying_dark.json',
       },
       points: [
         'Developing cloud based smart-contracts using AWS',
         'Building secure and scalable tokens using ERC-20 & ERC-721 standards',
         'Building Dapps with React.js & Solidity using Web3.js',
       ],
+      softwareSkills: []
+      /*
       softwareSkills: [
         { name: 'ethereum', icon: 'logos:ethereum' },
         { name: 'solidity', icon: 'logos:solidity' },
         { name: 'metamask', icon: 'logos:metamask-icon' },
       ],
+      */
     },
   ],
 };
@@ -259,6 +262,7 @@ export const projectsSection: ProjectsSectionType = {
       year: 2023,
       tags: ['Python', 'TensorFlow', 'Numpy', 'NLTK'],
     },
+    /*
     {
       id: getId(),
       name: 'Instruction Set',
@@ -268,6 +272,7 @@ export const projectsSection: ProjectsSectionType = {
       year: 2023,
       tags: ['Technical Writing'],
     },
+    */
     {
       id: getId(),
       name: 'Blockchain Server Client Node',
