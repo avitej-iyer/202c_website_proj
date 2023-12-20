@@ -35,8 +35,8 @@ export const seoData = {
     'Avitej is a senior in college who likes messing around with various technologies (especially frontend).',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/85820227/231264058-df236c47-a8d2-4077-9fa6-3577aa18e8ca.png',
-  url: '',
+    'https://github.com/avitej-iyer/website-picture/blob/main/Website%20snip.png?raw=true',
+  url: 'https://avitejiyer.vercel.app',
   keywords: [
     'Avitej Iyer',
     'Avitej',
