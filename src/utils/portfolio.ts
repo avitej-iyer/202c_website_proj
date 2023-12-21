@@ -185,7 +185,7 @@ export const experienceSection: ExperienceSectionType = {
       tasks: [
         "Used Loopback 3.x to help convert the previously monolithic architecture of the trading systems to a microservice-based architecture. This led to about a 60% decrease in the downtime of the services I worked on during updates",
         "Used Python, Matplotlib and Hicharts to parse project info and stock value changes to create automated end of project presentations. This helped reduce manual data collection and interpretation at the end of major projects.",
-        "Integrated multiple trading APIs (including Alpaca and GTN into the trading codebase and tested the same using Postman",
+        "Integrated multiple trading APIs (including Alpaca and GTN) into the trading codebase and tested the same using Postman",
       ],
     },
     {
