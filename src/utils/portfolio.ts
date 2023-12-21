@@ -77,7 +77,7 @@ export const heroSection: HeroSectionType = {
   title: 'Avitej Iyer.',
   tagline: 'Part time student, full time developer.',
   description:
-    "I'm a passionate full-stack developer, with experience in both frontend and backend systems.",
+    "I'm a passionate full-stack developer, with experience in both frontend and backend systems. I'm always eager to learn new technologies and work on new projects.",
 
   cta: {
     title: 'see my resume',
@@ -118,9 +118,9 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive static websites using Next.js',
-        'Building responsive Single Page Apps in React.js',
-        'Building RESTful APIs with Node.js & Express.js',
+        'Building responsive websites using Node.js',
+        'Maintaining and improving existing codebases and bug fixing',
+        'Creating reusable components and libraries for future use',
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
@@ -132,26 +132,34 @@ export const skillsSection: SkillsSectionType = {
           icon: 'vscode-icons:file-type-typescript-official',
         },
         { name: 'node.js', icon: 'logos:nodejs-icon' },
-        { name: 'react.js', icon: 'logos:react' },
+        /*{ name: 'react.js', icon: 'logos:react' },
         { name: 'next.js', icon: 'logos:nextjs-icon' },
         { name: 'tailwind CSS', icon: 'logos:tailwindcss-icon' },
-        { name: 'redux', icon: 'logos:redux' },
-        { name: 'database', icon: 'vscode-icons:file-type-sql' },
+        { name: 'redux', icon: 'logos:redux' },*/
+        { name: 'SQL', icon: 'vscode-icons:file-type-sql' },
       ],
     },
     {
       id: getId(),
-      title: 'Cloud Cryptography & Security',
+      title: 'Backend systems, Cloud and ML',
       lottie: {
         light: '/lotties/studying_light.json',
         dark: '/lotties/studying_dark.json',
       },
       points: [
-        'Developing cloud based smart-contracts using AWS',
-        'Building secure and scalable tokens using ERC-20 & ERC-721 standards',
-        'Building Dapps with React.js & Solidity using Web3.js',
+        'Developing sustainable and scalable applications using AWS',
+        'Using Python and Tensorflow for analyzing real-world datasets and creating ML models',
+        'Creating low-level systems using C/C++ and GoLang',
       ],
-      softwareSkills: []
+      softwareSkills: [
+        { name: 'python', icon: 'logos:python' },
+        { name: 'go', icon: 'vscode-icons:file-type-go' },
+        { name: 'AWS', icon: 'logos:aws' },
+        { name: 'Java', icon: 'logos:java' },
+        { name: 'C/C++', icon: 'logos:c-plusplus' },
+        { name: 'Scikit-Learn', icon: 'devicon:scikitlearn' },
+        { name: 'TensorFlow', icon: 'logos:tensorflow' }
+      ]
       /*
       softwareSkills: [
         { name: 'ethereum', icon: 'logos:ethereum' },
