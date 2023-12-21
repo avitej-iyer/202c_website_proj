@@ -75,7 +75,7 @@ export const navbarSection: NavbarSectionType = {
 export const heroSection: HeroSectionType = {
   subtitle: "Hey there! I'm ",
   title: 'Avitej Iyer.',
-  tagline: 'Jack of all trades, master of some.',
+  tagline: 'Part time student, full time developer.',
   description:
     "I'm a passionate full-stack developer, with experience in both frontend and backend systems.",
 
