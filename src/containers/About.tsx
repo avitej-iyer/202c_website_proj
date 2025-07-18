@@ -19,17 +19,11 @@ const About = () => {
       <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            I'm a fourth year Computer Science Student at Penn State university! I'm always interested in learning new technologies and frameworks, and am motivated by personal projects!
-          </p>
+
+          </p>I'm a Master's Computer Science Student at Penn State university! I'm always interested in learning new technologies and frameworks, and am motivated by personal projects!
           <p>
-            I'm currently learning Cloud Frameworks for the {' '}
-            <Link
-              href="https://aws.amazon.com/certification/certified-developer-associate/"
-              target="_blank"
-              className="text-accent"
-            >
-              AWS Certified Developer Associate
-            </Link> certificate and exploring Computational Game Theory!
+            I'm currently learning TypeScript and frontend developement
+            and exploring bioinformatic applications of LLMs for my research!
           </p>
           <p>
             When I'm not working, you can usually find me <Link href="https://www.instagram.com/liftsbyavi/" target="_blank" className='text-accent'>in the gym</Link>, playing the guitar, on the badminton court or just reading a book in a park (weather permitting, of course).
@@ -48,7 +42,7 @@ const About = () => {
         </div>
         <HeroImage src={img} alt={author.name} />
       </main>
-    </Wrapper>
+    </Wrapper >
   ) : (
     <></>
   );

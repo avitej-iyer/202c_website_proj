@@ -93,10 +93,10 @@ export const aboutSection: AboutSectionType = {
   list: {
     title: 'Here are a few technologies I’ve been working with recently:',
     items: [
-      'Python',
-      'React',
-      'JavaScript',
-      'HTML/CSS',
+      'LangChain',
+      'FastAPI',
+      'AWS (S3/DynamoDB)',
+      'Redis',
       'GoLang',
       'C/C++',
     ],
@@ -174,8 +174,33 @@ export const skillsSection: SkillsSectionType = {
 // * Experience Section
 
 export const experienceSection: ExperienceSectionType = {
-  title: "Where I've worked",
+  title: "My Experience",
   experiences: [
+    {
+      company: 'Research (w/ Dr. Zhang)',
+      companyUrl: 'https://ryanzhumich.github.io/',
+      role: '',
+      started: 'August 2024',
+      upto: 'Present',
+      tasks: [
+        "Architected a dockerized AI-driven pipeline for novel gene function discovery, using LangChain for agentic workflows and vLLM for efficient LLM inference",
+        "Developed an iterative LLM self-correction mechanism to improve mechanistic hypothesis generation from large-scale gene and GO datasets",
+        "Integrated INDRA knowledge graph retrieval with LLM reasoning to provide mechanistic context for under-characterized genes",
+        "Fine-tuned LLMs (TRL, Unsloth) on domain-specific biological data to enhance hypothesis generation and interpretation",
+      ],
+    },
+    {
+      company: 'Waters Corporation',
+      companyUrl: 'https://www.waters.com',
+      role: 'Generative AI and Machine Learning Intern',
+      started: 'May 2024',
+      upto: 'July 2024',
+      tasks: [
+        "Developed an AI chatbot trained on user manuals using LangChain and AWS services in an Agile team environment",
+        "Implemented scalable retrieval mechanisms with OpenSearch and refined RAG pipeline document retrieval",
+        "Created AWS Lambda functions using BeautifulSoup and Numpy to clean scraped HTML for ingestion",
+      ],
+    },
     {
       company: 'Valuefy',
       companyUrl: 'https://valuefy.com',
