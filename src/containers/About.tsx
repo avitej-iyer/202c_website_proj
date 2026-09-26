@@ -5,7 +5,7 @@ import { aboutSection, author } from '../utils/portfolio';
 import { getId } from '../utils/helper';
 
 const About = () => {
-  const { title, img, list } = aboutSection;
+  const { title, img, list, paragraphs } = aboutSection;
   // To avoid hydration error
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -18,15 +18,19 @@ const About = () => {
       <h2 className="heading-secondary">{title}</h2>
       <main className="flex gap-16 items-center lg:items-start flex-col lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
+          {paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
           <p>
-
-          </p>I'm a Master's Computer Science Student at Penn State university! I'm always interested in learning new technologies and frameworks, and am motivated by personal projects!
-          <p>
-            I'm currently learning TypeScript and frontend developement
-            and exploring bioinformatic applications of LLMs for my research!
-          </p>
-          <p>
-            When I'm not working, you can usually find me <Link href="https://www.instagram.com/liftsbyavi/" target="_blank" className='text-accent'>in the gym</Link>, playing the guitar, on the badminton court or just reading a book in a park (weather permitting, of course).
+            When I&apos;m not working, you can usually find me{' '}
+            <Link
+              href="https://www.instagram.com/liftsbyavi/"
+              target="_blank"
+              className="text-accent"
+            >
+              in the gym
+            </Link>
+            , playing guitar, on the badminton court, or reading in a park.
           </p>
 
           {list && (
@@ -42,7 +46,7 @@ const About = () => {
         </div>
         <HeroImage src={img} alt={author.name} />
       </main>
-    </Wrapper >
+    </Wrapper>
   ) : (
     <></>
   );
