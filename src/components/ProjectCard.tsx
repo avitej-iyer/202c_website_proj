@@ -31,28 +31,38 @@ const ProjectCard = ({
         }}
         className="group bg-bg-secondary block w-full shadow-xl dark:shadow-2xl rounded-md overflow-hidden transition-all duration-200"
       >
-        <div className="overflow-hidden h-[200px]">
-          <Image
-            src={img}
-            alt={name}
-            width={300}
-            height={300}
-            placeholder="blur"
-            blurDataURL={blurImageURL}
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {img ? (
+          <div className="overflow-hidden h-[200px]">
+            <Image
+              src={img}
+              alt={name}
+              width={300}
+              height={300}
+              placeholder="blur"
+              blurDataURL={blurImageURL}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : (
+          <div className="h-[200px] bg-gradient-to-br from-accent-light via-bg-secondary to-bg flex items-end p-5 text-left">
+            <span className="font-mono text-sm text-accent">
+              {tags.join(' / ')}
+            </span>
+          </div>
+        )}
         <div className="p-4 py-3 space-y-1">
           <div className="flex justify-between items-center">
             <p className="text-xs capitalize font-mono">{tags.join(' | ')}</p>
             <div className="flex items-center space-x-1.5">
-              <a
-                href={repo}
-                className="block hover:text-accent duration-200"
-                target="_blank"
-              >
-                <Icon icon="tabler:brand-github" width={20} height={20} />
-              </a>
+              {repo && (
+                <a
+                  href={repo}
+                  className="block hover:text-accent duration-200"
+                  target="_blank"
+                >
+                  <Icon icon="tabler:brand-github" width={20} height={20} />
+                </a>
+              )}
               <a
                 href={url}
                 className="block hover:text-accent duration-200"

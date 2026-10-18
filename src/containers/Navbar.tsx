@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Button, DarkModeButton, Link, NavButton } from '../components';
+import {
+  Button,
+  ColorPalettePicker,
+  DarkModeButton,
+  Link,
+  NavButton,
+} from '../components';
 import { fadeIn, slideIn } from '../animations';
 import { author, navbarSection } from '../utils/portfolio';
 import { getBreakpointsWidth, getId } from '../utils/helper';
@@ -119,7 +125,7 @@ const Navbar = () => {
               </NavItem>
             ))}
 
-            <div className="flex justify-between gap-5 xl:gap-6 items-center">
+            <div className="flex justify-between gap-3 xl:gap-4 items-center">
               {cta && (
                 <Button
                   type="link"
@@ -135,10 +141,20 @@ const Navbar = () => {
                   {cta.title}
                 </Button>
               )}
+              <motion.div
+                variants={slideIn({
+                  delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
+                  direction: 'down',
+                })}
+                initial="hidden"
+                animate="show"
+              >
+                <ColorPalettePicker />
+              </motion.div>
               <DarkModeButton
                 onClick={() => setNavbarCollapsed(false)}
                 variants={slideIn({
-                  delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
+                  delay: ANIMATION_DELAY + (navLinks.length + 2) / 10,
                   direction: 'down',
                 })}
                 initial="hidden"

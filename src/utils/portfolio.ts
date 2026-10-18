@@ -13,48 +13,27 @@ import { StringKeyValueType } from '../types';
 import { resumeFileName } from './config';
 import { getId } from './helper';
 
-/*
- * =========================
- * AUTHOR INFO
- * =========================
- */
-
 export const socialLinks: StringKeyValueType = {
   github: 'https://github.com/avitej-iyer',
   linkedin: 'https://www.linkedin.com/in/avitej-iyer',
 };
-
-export const author = {
-  name: 'Avitej Iyer',
-  email: 'iyeravitej2@gmail.com',
-};
-
+export const author = { name: 'Avitej Iyer', email: 'iyeravitej2@gmail.com' };
 export const seoData = {
-  title: 'Avitej Iyer | Student | Developer',
+  title: 'Avitej Iyer | Software Engineer & AI Researcher',
   description:
-    'Avitej is a senior in college who likes messing around with various technologies (especially frontend).',
+    'Avitej Iyer is a Penn State M.S. Computer Science graduate and software engineer specializing in AI systems, RAG, and full-stack development.',
   author: author.name,
   image:
     'https://github.com/avitej-iyer/website-picture/blob/main/Website%20snip.png?raw=true',
   url: 'https://avitejiyer.vercel.app',
   keywords: [
     'Avitej Iyer',
-    'Avitej',
-    'Avitej Iyer Portfolio',
-    'Avitej Portfolio',
-    '@Avitej Iyer',
-    '@Avitej',
-    'Iyer',
+    'Software Engineer',
+    'AI Researcher',
+    'RAG Systems',
+    'Full-Stack Developer',
   ],
 };
-
-/*
- * =========================
- * SECTIONS
- * =========================
- */
-
-// Navbar Section
 
 export const navbarSection: NavbarSectionType = {
   navLinks: [
@@ -64,38 +43,36 @@ export const navbarSection: NavbarSectionType = {
     { name: 'projects', url: '/#projects' },
     { name: 'contact', url: '/#contact' },
   ],
-  cta: {
-    title: 'resume',
-    url: `/${resumeFileName}`,
-  },
+  cta: { title: 'resume', url: `/${resumeFileName}` },
 };
-
-// * Hero Section
-
 export const heroSection: HeroSectionType = {
   subtitle: "Hey there! I'm ",
   title: 'Avitej Iyer.',
-  tagline: 'Part time student, full time developer.',
+  tagline: 'Software engineer, AI researcher, and full-time developer.',
   description:
-    "I'm a passionate full-stack developer, with experience in both frontend and backend systems. I'm always eager to learn new technologies and work on new projects.",
-
+    'I build reliable full-stack systems, retrieval-augmented generation workflows, and developer tools.',
   cta: {
     title: 'see my resume',
     url: `/${resumeFileName}`,
     hideInDesktop: true,
   },
 };
-
-// * About Section
-
 export const aboutSection: AboutSectionType = {
   title: 'about me',
+  paragraphs: [
+    'I’m a Penn State M.S. in Computer Science graduate (GPA 3.84) whose thesis explored efficient RAG systems for gene set function prediction.',
+    'My work spans production software engineering, AI-assisted developer tooling, and grounded language-model systems. I enjoy turning technically ambitious ideas into dependable, useful products.',
+    'I’m always eager to learn new technologies and frameworks, and I stay motivated by personal projects.',
+  ],
   list: {
-    title: 'Here are a few technologies I’ve been working with recently:',
+    title: 'A few technologies I’ve been working with recently:',
     items: [
       'LangChain',
       'FastAPI',
-      'AWS (S3/DynamoDB)',
+      'AWS',
+      'Playwright',
+      'FAISS',
+      'vLLM',
       'Redis',
       'GoLang',
       'C/C++',
@@ -104,89 +81,89 @@ export const aboutSection: AboutSectionType = {
   img: '/new.jpg',
 };
 
-// * Skills Section
-
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
   skills: [
     {
       id: getId(),
-      title: 'full stack development',
-      // animation lottie file: https://lottiefiles.com/
+      title: 'full-stack development',
       lottie: {
         light: '/lotties/frontend.json',
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building responsive websites using Node.js',
-        'Maintaining and improving existing codebases and bug fixing',
-        'Creating reusable components and libraries for future use',
+        'Building responsive applications with TypeScript, Node.js, and Tailwind CSS',
+        'Designing APIs and dependable automation with FastAPI and Playwright',
+        'Shipping maintainable frontend and backend systems',
       ],
       softwareSkills: [
-        // iconify icons: https://icon-sets.iconify.design/
         { name: 'HTML5', icon: 'vscode-icons:file-type-html' },
         { name: 'CSS3', icon: 'vscode-icons:file-type-css' },
-        { name: 'javaScript', icon: 'vscode-icons:file-type-js-official' },
+        { name: 'JavaScript', icon: 'vscode-icons:file-type-js-official' },
         {
-          name: 'typeScript',
+          name: 'TypeScript',
           icon: 'vscode-icons:file-type-typescript-official',
         },
-        { name: 'node.js', icon: 'logos:nodejs-icon' },
-        /*{ name: 'react.js', icon: 'logos:react' },
-        { name: 'next.js', icon: 'logos:nextjs-icon' },
-        { name: 'tailwind CSS', icon: 'logos:tailwindcss-icon' },
-        { name: 'redux', icon: 'logos:redux' },*/
+        { name: 'Node.js', icon: 'logos:nodejs-icon' },
+        { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
         { name: 'SQL', icon: 'vscode-icons:file-type-sql' },
+        { name: 'React', icon: 'logos:react' },
       ],
     },
     {
       id: getId(),
-      title: 'Backend systems, Cloud and ML',
+      title: 'AI systems, cloud & ML',
       lottie: {
         light: '/lotties/studying_light.json',
         dark: '/lotties/studying_dark.json',
       },
       points: [
-        'Developing sustainable and scalable applications using AWS',
-        'Using Python and Tensorflow for analyzing real-world datasets and creating ML models',
-        'Creating low-level systems using C/C++ and GoLang',
+        'Building grounded RAG systems with LangChain, FAISS, and vLLM',
+        'Deploying cloud pipelines with AWS Lambda, S3, DynamoDB, and Bedrock',
+        'Fine-tuning and evaluating LLMs with HuggingFace, TensorFlow, and Scikit-learn',
       ],
       softwareSkills: [
-        { name: 'python', icon: 'logos:python' },
-        { name: 'go', icon: 'vscode-icons:file-type-go' },
+        { name: 'Python', icon: 'logos:python' },
+        { name: 'Go', icon: 'vscode-icons:file-type-go' },
         { name: 'AWS', icon: 'logos:aws' },
+        { name: 'Docker', icon: 'logos:docker-icon' },
+        { name: 'C#', icon: 'vscode-icons:file-type-csharp2' },
         { name: 'Java', icon: 'logos:java' },
         { name: 'C/C++', icon: 'logos:c-plusplus' },
-        { name: 'Scikit-Learn', icon: 'devicon:scikitlearn' },
-        { name: 'TensorFlow', icon: 'logos:tensorflow' }
-      ]
-      /*
-      softwareSkills: [
-        { name: 'ethereum', icon: 'logos:ethereum' },
-        { name: 'solidity', icon: 'logos:solidity' },
-        { name: 'metamask', icon: 'logos:metamask-icon' },
+        { name: 'Scikit-learn', icon: 'devicon:scikitlearn' },
+        { name: 'TensorFlow', icon: 'logos:tensorflow' },
       ],
-      */
     },
   ],
 };
 
-// * Experience Section
-
 export const experienceSection: ExperienceSectionType = {
-  title: "My Experience",
+  title: 'My Experience',
   experiences: [
     {
-      company: 'Research (w/ Dr. Zhang)',
-      companyUrl: 'https://ryanzhumich.github.io/',
-      role: '',
-      started: 'August 2024',
-      upto: 'Present',
+      company: 'ClearOpx',
+      companyUrl: '',
+      role: 'Software Engineering Intern',
+      started: 'June 2026',
+      upto: 'August 2026',
       tasks: [
-        "Architected a dockerized AI-driven pipeline for novel gene function discovery, using LangChain for agentic workflows and vLLM for efficient LLM inference",
-        "Developed an iterative LLM self-correction mechanism to improve mechanistic hypothesis generation from large-scale gene and GO datasets",
-        "Integrated INDRA knowledge graph retrieval with LLM reasoning to provide mechanistic context for under-characterized genes",
-        "Fine-tuned LLMs (TRL, Unsloth) on domain-specific biological data to enhance hypothesis generation and interpretation",
+        'Migrated legacy Selenium ingestion pipelines to C# and Playwright, reducing average runtime by 16% and memory usage by 80%.',
+        'Modernized dynamic SQL translation across core backend controllers by replacing unmaintained query parsers with Microsoft OData.',
+        'Built a Pytest differential-testing suite with multi-clause query fuzzing to catch sorting and data-formatting bugs before deployment.',
+        'Automated failure diagnostics with DOM snapshots and full-page logs; prototyped LLM-driven self-healing selectors with Playwright MCP agents.',
+      ],
+    },
+    {
+      company: 'Pennsylvania State University',
+      companyUrl: 'https://www.psu.edu',
+      role: 'Graduate Assistant',
+      started: 'August 2024',
+      upto: 'May 2026',
+      tasks: [
+        'Architected GeneInterpreter, a dual-graph RAG system using FAISS that cut inference latency 4×, from 42 seconds to 10 seconds.',
+        'Reduced gene-set-recognition hallucinations from 18.9% to under 2% through knowledge-graph grounding.',
+        'Fine-tuned LLMs with Unsloth on synthetic NCBI Q&A pairs and deployed vLLM checkpoints for benchmarking.',
+        'Mentored more than 100 students as a TA for Computer Vision and Programming Languages.',
       ],
     },
     {
@@ -196,21 +173,33 @@ export const experienceSection: ExperienceSectionType = {
       started: 'May 2024',
       upto: 'July 2024',
       tasks: [
-        "Developed an AI chatbot trained on user manuals using LangChain and AWS services in an Agile team environment",
-        "Implemented scalable retrieval mechanisms with OpenSearch and refined RAG pipeline document retrieval",
-        "Created AWS Lambda functions using BeautifulSoup and Numpy to clean scraped HTML for ingestion",
+        'Contributed to an AI chatbot using LangChain, AWS, and OpenSearch to index 1,000+ product manuals within an Agile team.',
+        'Built AWS Lambda parsing modules with BeautifulSoup and NumPy to prepare scraped HTML for the RAG ingestion pipeline.',
       ],
     },
     {
       company: 'Valuefy',
       companyUrl: 'https://valuefy.com',
-      role: 'Software Developement Intern',
+      role: 'Software Engineering Intern',
       started: 'May 2023',
       upto: 'August 2023',
       tasks: [
-        "Used Loopback 3.x to help convert the previously monolithic architecture of the trading systems to a microservice-based architecture. This led to about a 60% decrease in the downtime of the services I worked on during updates",
-        "Used Python, Matplotlib and Hicharts to parse project info and stock value changes to create automated end of project presentations. This helped reduce manual data collection and interpretation at the end of major projects.",
-        "Integrated multiple trading APIs (including Alpaca and GTN) into the trading codebase and tested the same using Postman",
+        'Collaborated on a Loopback microservices migration that reduced production downtime during updates by 20%.',
+        'Validated and deployed REST APIs for multi-account trade synchronization using Bluebird and Postman.',
+        'Automated client-facing Python reporting pipelines, reducing delivery time from hours to minutes for 15+ reports.',
+      ],
+    },
+    {
+      company: 'Research (w/ Dr. Zhang)',
+      companyUrl: 'https://ryanzhumich.github.io/',
+      role: 'Researcher',
+      started: 'August 2024',
+      upto: 'May 2026',
+      tasks: [
+        'Architected a dockerized AI-driven pipeline for novel gene function discovery, using LangChain for agentic workflows and vLLM for efficient LLM inference.',
+        'Developed an iterative LLM self-correction mechanism to improve mechanistic hypothesis generation from large-scale gene and GO datasets.',
+        'Integrated INDRA knowledge graph retrieval with LLM reasoning to provide mechanistic context for under-characterized genes.',
+        'Fine-tuned LLMs with TRL and Unsloth on domain-specific biological data to enhance hypothesis generation and interpretation.',
       ],
     },
     {
@@ -218,11 +207,11 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://rerc-aac.psu.edu',
       role: 'Capstone Team Lead',
       started: 'August 2023',
-      upto: 'Present',
+      upto: 'December 2023',
       tasks: [
-        "Responsible for developing an indoor point-to-point navigation system in Unity focusing on accessibilty for mentally and physically impaired individuals",
-        "Developed a marker system using ARCore to guide users from one GPS co-ordinate to another. Also implemented a rapidly refreshing pathing mechanism to have a constant marker to endpoint.",
-        "Managed 4 other team members’ workflows using Trello and Git. Also set up testing pipelines for seamless code improvement. ",
+        'Developed an indoor point-to-point navigation system in Unity focused on accessibility for mentally and physically impaired individuals.',
+        'Developed an ARCore marker system to guide users between GPS coordinates, with a rapidly refreshing pathing mechanism.',
+        'Managed four team members’ workflows with Trello and Git and set up testing pipelines for seamless code improvement.',
       ],
     },
     {
@@ -230,11 +219,11 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://pennstatelearning.psu.edu',
       role: 'Guided Study Group Leader',
       started: 'August 2022',
-      upto: 'Present',
+      upto: 'May 2024',
       tasks: [
-        "Facilitated revision lectures for Calculus 2, while working alongside the Mathematics department.",
-        "Created custom slides, Manim animations and worksheets for students to better their understanding of Calculus 2 concepts",
-        "Organised exam reviews for each major exam, with upwards of 400 students in attendance - with the average attendee’s test scores being 12% higher than non-attendees",
+        'Facilitated Calculus 2 revision lectures alongside the Mathematics department.',
+        'Created custom slides, Manim animations, and worksheets to help students understand Calculus 2 concepts.',
+        'Organized major-exam reviews for up to 400 students; attendees averaged test scores 12% higher than non-attendees.',
       ],
     },
     {
@@ -242,41 +231,43 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://www.eecs.psu.edu',
       role: 'Learning Assistant and Grader',
       started: 'May 2021',
-      upto: 'Present',
+      upto: 'May 2025',
       tasks: [
-        "Assisted professors by preparing course materials, conducting office hours for doubt clearing and grading",
-        'Courses assisted include Newtonian Mechanics, Calculus 1, Discrete Math and Programming Language Concepts and Construction',
+        'Prepared course materials, conducted office hours, and graded coursework.',
+        'Supported Newtonian Mechanics, Calculus 1, Discrete Math, and Programming Language Concepts and Construction.',
       ],
     },
     {
       company: 'Private Tutoring',
       companyUrl: '',
-      role: '',
+      role: 'Tutor',
       started: 'January 2022',
-      upto: 'Present',
+      upto: 'May 2025',
       tasks: [
-        "Tutored students in a variety of subjects - from helping high-schoolers with AP Calc and the SAT to college level tutoring for the GRE and advanced math classes",
-        'Assisted 13 tutees to date, with significant score increases whenever recorded',
+        'Tutored students from AP Calculus and SAT preparation through GRE and advanced college mathematics.',
+        'Assisted 13 tutees to date, with significant score increases whenever recorded.',
       ],
     },
-    // {
-    //   company: '',
-    //   companyUrl: '',
-    //   role: '',
-    //   started: '',
-    //   upto: '',
-    //   tasks: [
-
-    //   ],
-    // },
   ],
 };
-
-// * Projects Section
 
 export const projectsSection: ProjectsSectionType = {
   title: 'my projects',
   projects: [
+    {
+      id: getId(),
+      name: 'Interactive LLM Agent Playground',
+      url: 'https://agentic-playground-zplh.vercel.app',
+      year: 2026,
+      tags: ['React Flow', 'OpenRouter', 'Gemini'],
+    },
+    {
+      id: getId(),
+      name: 'AR Navigation App for Accessibility',
+      url: 'https://github.com/avitej-iyer',
+      year: 2024,
+      tags: ['Unity', 'C#', 'AR Foundation', 'YOLOv4'],
+    },
     {
       id: getId(),
       name: 'The Splice Programming Language',
@@ -293,19 +284,8 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/avitej-iyer/Tweet-Emotion-Recognizer',
       img: '/project_images/emotion.png',
       year: 2023,
-      tags: ['Python', 'TensorFlow', 'Numpy', 'NLTK'],
+      tags: ['Python', 'TensorFlow', 'NumPy', 'NLTK'],
     },
-    /*
-    {
-      id: getId(),
-      name: 'Instruction Set',
-      url: 'https://github.com/avitej-iyer/202c-Instruction-Set',
-      repo: 'https://github.com/avitej-iyer/202c-Instruction-Set',
-      img: '/project_images/squat_pic.png',
-      year: 2023,
-      tags: ['Technical Writing'],
-    },
-    */
     {
       id: getId(),
       name: 'Blockchain Server Client Node',
@@ -318,43 +298,22 @@ export const projectsSection: ProjectsSectionType = {
   ],
 };
 
-// * Contact Section
-
 export const contactSection: ContactSectionType = {
   title: 'get in touch',
   subtitle: "what's next",
   paragraphs: [
-    "I'm currently looking for a remote job or any new opportunities.",
+    "I'm open to software engineering and AI/ML opportunities.",
+    "I'm also currently looking for remote roles and new opportunities.",
     'Whether you have a project to discuss or just want to say hi, my inbox is open for all!',
   ],
   link: `mailto:${author.email}`,
 };
-
-// Social Links Section
-
 export const socialSection: SocialSectionType = {
   socialLinks: [
-    {
-      icon: 'tabler:brand-github',
-      url: socialLinks.github,
-    },
-    /*{
-      icon: 'mdi:instagram',
-      url: socialLinks.instagram,
-    },
-    {
-      icon: 'lucide:twitter',
-      url: socialLinks.twitter,
-    },*/
-    {
-      icon: 'lucide:linkedin',
-      url: socialLinks.linkedin,
-    },
+    { icon: 'tabler:brand-github', url: socialLinks.github },
+    { icon: 'lucide:linkedin', url: socialLinks.linkedin },
   ],
 };
-
-// Footer Section
-
 export const footerSection: FooterSectionType = {
   title: 'Design Inspiration @Brittany Chiang',
   link: 'https://github.com/bchiang7',

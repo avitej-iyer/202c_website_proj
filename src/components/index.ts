@@ -1,4 +1,5 @@
 import Button from './Button';
+import ColorPalettePicker from './ColorPalettePicker';
 import DarkModeButton from './DarkModeButton';
 import HeroImage from './HeroImage';
 import Link from './Link';
@@ -17,6 +18,7 @@ import Wrapper from './Wrapper';
 
 export {
   Button,
+  ColorPalettePicker,
   NavButton,
   ShowLottie,
   SkillIcon,

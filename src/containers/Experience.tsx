@@ -7,10 +7,12 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="py-32 max-w-2xl mx-auto"
+      className="py-32 max-w-6xl mx-auto"
       {...getSectionAnimation}
     >
-      <h2 className="heading-secondary">{experienceSection.title}</h2>
+      <h2 className="heading-secondary !mb-5 sm:!mb-6">
+        {experienceSection.title}
+      </h2>
 
       <Tablist experiences={experienceSection.experiences} />
     </motion.section>

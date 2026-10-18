@@ -29,9 +29,9 @@ export type ProjectType = {
   name: string;
   url: string;
   year: number;
-  img: string;
+  img?: string;
   tags: string[];
-  repo: string;
+  repo?: string;
 };
 
 export type StringKeyValueType = {
