@@ -194,7 +194,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://ryanzhumich.github.io/',
       role: 'Researcher',
       started: 'August 2024',
-      upto: 'Present',
+      upto: 'May 2026',
       tasks: [
         'Architected a dockerized AI-driven pipeline for novel gene function discovery, using LangChain for agentic workflows and vLLM for efficient LLM inference.',
         'Developed an iterative LLM self-correction mechanism to improve mechanistic hypothesis generation from large-scale gene and GO datasets.',
@@ -207,7 +207,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://rerc-aac.psu.edu',
       role: 'Capstone Team Lead',
       started: 'August 2023',
-      upto: 'Present',
+      upto: 'December 2023',
       tasks: [
         'Developed an indoor point-to-point navigation system in Unity focused on accessibility for mentally and physically impaired individuals.',
         'Developed an ARCore marker system to guide users between GPS coordinates, with a rapidly refreshing pathing mechanism.',
@@ -219,7 +219,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://pennstatelearning.psu.edu',
       role: 'Guided Study Group Leader',
       started: 'August 2022',
-      upto: 'Present',
+      upto: 'May 2024',
       tasks: [
         'Facilitated Calculus 2 revision lectures alongside the Mathematics department.',
         'Created custom slides, Manim animations, and worksheets to help students understand Calculus 2 concepts.',
@@ -231,7 +231,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: 'https://www.eecs.psu.edu',
       role: 'Learning Assistant and Grader',
       started: 'May 2021',
-      upto: 'Present',
+      upto: 'May 2025',
       tasks: [
         'Prepared course materials, conducted office hours, and graded coursework.',
         'Supported Newtonian Mechanics, Calculus 1, Discrete Math, and Programming Language Concepts and Construction.',
@@ -242,7 +242,7 @@ export const experienceSection: ExperienceSectionType = {
       companyUrl: '',
       role: 'Tutor',
       started: 'January 2022',
-      upto: 'Present',
+      upto: 'May 2025',
       tasks: [
         'Tutored students from AP Calculus and SAT preparation through GRE and advanced college mathematics.',
         'Assisted 13 tutees to date, with significant score increases whenever recorded.',
