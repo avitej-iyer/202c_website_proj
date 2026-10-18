@@ -36,6 +36,72 @@
     --color-dark-3: theme(colors.slate.700);
   }
 
+  :root[data-accent='violet'] {
+    --color-bg: #fbfaff;
+    --color-bg-secondary: #ffffff;
+    --color-accent: theme(colors.violet.500);
+    --color-accent-light: theme(colors.violet.500/0.1);
+    --color-text: #625d73;
+    --color-dark-1: #211d2e;
+    --color-dark-2: #443e57;
+    --color-dark-3: #d7d1e6;
+  }
+
+  .dark[data-accent='violet'] {
+    --color-bg: #171427;
+    --color-bg-secondary: #201b35;
+    --color-accent: theme(colors.violet.400);
+    --color-accent-light: theme(colors.violet.400/0.12);
+    --color-text: #aaa4bd;
+    --color-dark-1: #f0edfa;
+    --color-dark-2: #ddd8eb;
+    --color-dark-3: #3f3855;
+  }
+
+  :root[data-accent='emerald'] {
+    --color-bg: #f6fbf8;
+    --color-bg-secondary: #ffffff;
+    --color-accent: theme(colors.emerald.500);
+    --color-accent-light: theme(colors.emerald.500/0.1);
+    --color-text: #5e7169;
+    --color-dark-1: #19352b;
+    --color-dark-2: #36594b;
+    --color-dark-3: #cce2d7;
+  }
+
+  .dark[data-accent='emerald'] {
+    --color-bg: #0e1f1a;
+    --color-bg-secondary: #142923;
+    --color-accent: theme(colors.emerald.400);
+    --color-accent-light: theme(colors.emerald.400/0.12);
+    --color-text: #9db7ac;
+    --color-dark-1: #e6f4ed;
+    --color-dark-2: #cfe4da;
+    --color-dark-3: #365247;
+  }
+
+  :root[data-accent='rose'] {
+    --color-bg: #fff9fa;
+    --color-bg-secondary: #ffffff;
+    --color-accent: theme(colors.rose.500);
+    --color-accent-light: theme(colors.rose.500/0.1);
+    --color-text: #765d65;
+    --color-dark-1: #3c1e29;
+    --color-dark-2: #62404a;
+    --color-dark-3: #ebcfd6;
+  }
+
+  .dark[data-accent='rose'] {
+    --color-bg: #241419;
+    --color-bg-secondary: #301b21;
+    --color-accent: theme(colors.rose.400);
+    --color-accent-light: theme(colors.rose.400/0.12);
+    --color-text: #c5a2ac;
+    --color-dark-1: #faeaee;
+    --color-dark-2: #ead2d9;
+    --color-dark-3: #553741;
+  }
+
   @font-face {
     font-family: 'agustina';
     src: url('/fonts/Agustina-Signature.otf') format('opentype');
@@ -44,6 +110,10 @@
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
+}
+
+body {
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
 /* TYPOGRAPHY */
